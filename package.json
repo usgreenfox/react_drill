@@ -1,0 +1,14 @@
+{
+  "name": "react_drill",
+  "version": "1.0.0",
+  "description": "since 202408",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "webpack": "webpack -d"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
