@@ -12,4 +12,10 @@ since 202408
 
 ## 環境構築
 
+Reactの公式サイト経由でNext.jsプロジェクトを作成。
+
+(Reactのサイト)[https://ja.react.dev/learn/start-a-new-react-project]
+
+(Next.jsのサイト)[https://nextjs.org/learn/dashboard-app/getting-started]
+
 ## 参考サイト
