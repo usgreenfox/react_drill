@@ -7,9 +7,15 @@ module.exports = {
     filename: "[name].js"
   },
     devServer: {
-    contentBase: __dirname + '/public',
+    // contentBase: __dirname + '/public',
+    static: {
+      directory: __dirname + '/public',
+    },
     port: 8080,
-    publicPath: '/js/'
+    // publicPath: '/js/'
+    devMiddleware: {
+      publicPath: '/js/'
+    },
   },
   devtool: "eval-source-map",
   mode: 'development',
@@ -21,7 +27,7 @@ module.exports = {
       loader: "eslint-loader"
     }, {
       test: /\.css$/,
-      loader: ["style-loader","css-loader"]
+      use: ["style-loader","css-loader"]
     }, {
       test: /\.js$/,
       exclude: /node_modules/,
